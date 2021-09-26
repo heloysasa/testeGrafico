@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>chart</title>
+</head>
+<body>
+    <canvas id="myChart" width="1em" height="0.2em" ></canvas>
+
+    <script>
+        let chart = new Chart(document.getElementById("myChart"),{
+            type:'bar',
+            data:{
+                labels: ["Sé (São Paulo)", "Barra Funda (São Paulo)", "Cidade de Deus (Rio de Janeiro)", "Campo Grande (Rio de Janeiro)", "Sítio Cercado (Curitiba)"],
+                datasets: [
+                    {
+                        data: [77,70,86,64,56],
+                        backgroundColor:[
+                            'rgba(255,99,132, 0.2)',
+                            'rgba(255,99,132, 0.2)',
+                            'rgba(255,99,132, 0.2)',
+                            'rgba(255,99,132, 0.2)',
+                            'rgba(255,99,132, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(255,99,132,1)',
+                            'rgba(255,99,132,1)',
+                            'rgba(255,99,132,1)',
+                            'rgba(255,99,132,1)'
+                        ],
+                        borderWidth:3
+                    }
+                ]
+            }
+        })
+    </script>
+</body>
+</html>
